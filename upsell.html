@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Oferta Especial - Não feche essa página</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose:#D8A7A0;
+    --rose-deep:#C28E89;
+    --sage:#A9B79C;
+    --sage-deep:#8FA180;
+    --cream:#FBF5EE;
+    --cream-2:#F4E9DD;
+    --plum:#4A3942;
+    --plum-soft:#7A6670;
+    --white:#FFFDFB;
+    --alert:#E63946;
+    --shadow: 0 8px 24px rgba(74,57,66,0.12);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Poppins', sans-serif;
+    background:var(--cream);
+    color:var(--plum);
+    line-height:1.55;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block; border-radius:16px;}
+  .wrap{max-width:480px; margin:0 auto; padding:0 22px;}
+  h1,h2,h3{font-family:'Poppins', sans-serif; font-weight:700; line-height:1.25;}
+  a{text-decoration:none; color:inherit;}
+  
+  /* Top Alert Bar */
+  .alert-bar{
+    background:var(--alert);
+    color:var(--white);
+    text-align:center;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.05em;
+    padding:14px 14px;
+    text-transform:uppercase;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { background: #E63946; }
+    50% { background: #D62828; }
+    100% { background: #E63946; }
+  }
+
+  .upsell-header {
+    text-align:center;
+    padding: 30px 0 20px;
+  }
+  .upsell-header h1 {
+    font-size: 26px;
+    color: var(--plum);
+    margin-bottom: 12px;
+  }
+  .upsell-header p {
+    font-size: 15px;
+    color: var(--plum-soft);
+  }
+
+  .product-box {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+    border: 2px solid var(--rose);
+  }
+
+  .product-box h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--plum);
+    text-align: center;
+  }
+
+  .features {
+    list-style: none;
+    margin: 20px 0;
+  }
+  .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14.5px;
+    color: var(--plum);
+  }
+  .features li svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .price-box {
+    text-align: center;
+    background: var(--cream-2);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+  .price-box .from {
+    font-size: 14px;
+    color: var(--plum-soft);
+    text-decoration: line-through;
+  }
+  .price-box .now {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--sage-deep);
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+    background: #25D366;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 50px;
+    box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 16px;
+  }
+  .cta-btn:active {
+    transform: scale(0.97);
+  }
+
+  .decline-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: var(--plum-soft);
+    text-decoration: underline;
+    padding: 10px;
+  }
+
+  .placeholder-img {
+    width: 100%;
+    height: 200px;
+    background: var(--cream-2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--plum-soft);
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: 2px dashed var(--rose);
+  }
+</style>
+</head>
+<body>
+
+<div class="alert-bar">
+  NÃO FECHE OU SUA COMPRA NÃO SERÁ FINALIZADA!
+</div>
+
+<section class="wrap">
+  <div class="upsell-header">
+    <h1>Espere! Temos uma oferta única para você.</h1>
+    <p>Sua compra dos riscos foi aprovada, mas você precisará disso para começar com o pé direito.</p>
+  </div>
+
+  <div class="product-box">
+    <h2>Guia Completo: Pontos, Materiais & Bastidor Perfeito</h2>
+    
+    <div class="placeholder-img">
+      [Capa do Guia Digital]
+    </div>
+
+    <p style="font-size: 14.5px; color: var(--plum-soft); margin-bottom: 16px; text-align: center;">
+      Ter os melhores riscos não adianta nada se você não souber quais materiais comprar ou qual ponto usar em cada detalhe.
+    </p>
+
+    <ul class="features">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#8FA180" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span><strong>O Bastidor Perfeito:</strong> Como esticar o tecido e transferir o risco sem borrar.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#8FA180" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span><strong>Guia de Agulhas e Linhas:</strong> A numeração exata e marcas para um acabamento profissional.</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="#8FA180" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span><strong>Dicionário de Pontos:</strong> O passo a passo ilustrado dos pontos fundamentais do bordado livre.</span>
+      </li>
+    </ul>
+
+    <div class="price-box">
+      <div class="from">de R$ 47,00 por apenas:</div>
+      <div class="now">R$ 19,90</div>
+      <div style="font-size: 13px; color: var(--plum-soft); margin-top: 5px;">(Oferta exclusiva e única)</div>
+    </div>
+
+    <!-- O link do href deve ser trocado pelo link de upsell/one-click-buy da plataforma -->
+    <a href="#" class="cta-btn">SIM, QUERO ADICIONAR AO MEU PEDIDO</a>
+    
+    <!-- Link para pular a oferta -->
+    <a href="#" class="decline-link">Não, obrigado. Quero tentar bordar sozinha.</a>
+  </div>
+</section>
+
+</body>
+</html>
